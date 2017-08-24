@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        app:elevation="0dp"
+        app:layout_scrollFlags="scroll"></android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="债务人姓名:" />
+
+                    <TextView
+                        android:id="@+id/debtor_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="性别:"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_gender"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="婚 姻 状 况 :" />
+
+                    <TextView
+                        android:id="@+id/debtor_marital_status"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证号码:" />
+
+                    <TextView
+                        android:id="@+id/debtor_id_card"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话1:" />
+
+                    <TextView
+                        android:id="@+id/debtor_cantact_phone1"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话2:"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_cantact_phone2"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话3:" />
+
+                    <TextView
+                        android:id="@+id/debtor_cantact_phone3"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工 作 单 位 :" />
+
+                    <TextView
+                        android:id="@+id/debtor_work_company_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工 作 地 址 :"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_work_company_address"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭住址1:" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_address1"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭住址2:"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_address2"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭住址3:" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_address3"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭联系人1:" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_contact_1_phone"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭联系人2:"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_contact_2_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家庭联系人3:" />
+
+                    <TextView
+                        android:id="@+id/debtor_home_contact_3_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紧急联系人1:" />
+
+                    <TextView
+                        android:id="@+id/debtor_emergency_contact_1_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/debtmsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紧急联系人2:"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/debtor_emergency_contact_2_name"
+                        style="@style/debtmsg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
+
+

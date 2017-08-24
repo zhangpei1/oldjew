@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:textSize="16sp"
+        android:textColor="#2c2c2c"
+        android:gravity="center"
+        android:id="@+id/message"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="40dp"
+        android:text="你还没有完成催收任务，确定现在就要\n退单吗？"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+    <TextView
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="#3290f2"
+            android:id="@+id/positiveButton"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="0.01"
+            android:background="#F0F0F0"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="#3290f2"
+            android:id="@+id/negativeButton"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

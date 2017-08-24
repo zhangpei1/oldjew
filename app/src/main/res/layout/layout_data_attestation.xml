@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/data_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/company_data"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/company_msg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imag1"
+                    android:text="公司基本资料"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司全称" />
+
+                    <EditText
+                        android:id="@+id/business_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注册时间" />
+
+                    <EditText
+                        android:id="@+id/set_up_time"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:inputType="number"
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注册资本" />
+
+                    <EditText
+                        android:id="@+id/registered_capital"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="统一社会信用代码" />
+
+                    <EditText
+                      android:inputType="textCapCharacters|number"
+                        android:id="@+id/credit_cooperative_number"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行开户许可证号" />
+
+                    <EditText
+                        android:inputType="textCapCharacters|number"
+                        android:id="@+id/bank_license_number"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司地址" />
+
+                    <EditText
+                        android:id="@+id/contact_address"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务邮箱" />
+
+                    <EditText
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/contact_email"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="催收类型" />
+
+                    <CheckBox
+                        android:id="@+id/car_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="车贷" />
+
+                    <CheckBox
+                        android:id="@+id/house_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:text="房贷" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="催收优势区域" />
+
+                    <EditText
+                        android:id="@+id/collection_area"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务覆盖范围" />
+
+                    <RadioGroup
+                        android:id="@+id/business_scope"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/provincial_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="省级" />
+
+                        <RadioButton
+                            android:id="@+id/city_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="市级" />
+
+                        <RadioButton
+                            android:id="@+id/land_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="地级" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电催人数" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/phone_collection_count"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上门催收人数" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/visit_collection_count"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/universa"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="不良资产处置渠道" />
+
+                    <RadioGroup
+                        android:id="@+id/business_scope1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/is_have"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="有" />
+
+                        <RadioButton
+                            android:id="@+id/no_have"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="41sp"
+                            android:text="无" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="债务人员信息补全渠道" />
+
+                    <RadioGroup
+                        android:id="@+id/business_scope2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/is_have_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="有" />
+
+                        <RadioButton
+                            android:id="@+id/no_have_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="41sp"
+                            android:text="无" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="合作律师或事务所" />
+
+                    <RadioGroup
+                        android:id="@+id/business_scope3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/is_have_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="有" />
+
+                        <RadioButton
+                            android:id="@+id/no_have_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="41sp"
+                            android:text="无" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="过往合作金融机构名称" />
+
+                    <EditText
+                        android:id="@+id/has_channel_of_asset_disposal"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--<Switch-->
+            <!--android:text="无"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:textOff="蓝牙关闭中"-->
+            <!--android:textOn="蓝牙开启中"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <RelativeLayout
+                android:id="@+id/company_data1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/legal_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/legal_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/legal_img"
+                    android:text="公司法人资料"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法人姓名" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/legal_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法人联系电话" />
+
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/legal_phone"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法人身份证号码" />
+
+                    <EditText
+                        android:digits="@string/id_card"
+                        android:id="@+id/legal_id_card"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/company_data2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/principal_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/principal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/principal_img"
+                    android:text="公司负责人资料"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司负责人姓名" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/charge_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司负责人联系电话" />
+
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/charge_phone"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司负责人身份证号码" />
+
+                    <EditText
+                        android:digits="@string/id_card"
+                        android:id="@+id/charge_id_card"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/company_data3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/principal_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/principal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/principal_img1"
+                    android:text="业务对接人资料"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务对接人姓名" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/contact_person_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务对接人联系电话" />
+
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/contact_person_phone"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="业务对接人身份证号码" />
+
+                    <EditText
+                        android:digits="@string/id_card"
+                        android:id="@+id/contact_person_id_card"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/company_data4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/bank_imag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bank_number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/bank_imag"
+                    android:text="银行账号"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行账号(对公)" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/public_bank_number"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户行(对公)" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/public_bank_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户名(对公)" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/public_bank_person_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行账号(个人)" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/private_bank_number"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户行(个人)" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/private_bank_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/dataattestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/universa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户名(个人)" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/private_bank_person_name"
+                        style="@style/universa_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/company_data5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/credentials_imag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/credentials" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/credentials_imag"
+                    android:text="证件资料"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrows5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_ishow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="工商营业执照"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/business_license_img"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/document_image" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="法人身份证"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/legal_number"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/positive" />
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/legal_number_back"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/flip_side" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="业务对接人身份证"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/docking_person"
+                                android:scaleType="centerCrop"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/positive" />
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/docking_person_back"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/flip_side" />
+
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/id_person"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/hold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="律师资格证"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/lawyer_certificate"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/document_image" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+       android:background="#1378E1"
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="确定"
+        android:visibility="gone" />
+</LinearLayout>

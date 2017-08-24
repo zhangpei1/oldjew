@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="212-12-12"
+        android:textColor="#6A6A6A"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/history_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/history_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="四川省成都市东哥村"
+            android:textColor="#6A6A6A"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/examine_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多"
+            android:textColor="#3290f2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#3290f2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F0F0F0"></View>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3290f2"
+    tools:context=".ui.collectoractivity.CollectorMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3290f2">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.new_jew.customview.MyViewpager
+            android:id="@+id/collector_mian_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F0F0F0"></com.new_jew.customview.MyViewpager>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/mylist_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_single"
+                android:text="委单" />
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/msg_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_msg"
+                android:text="消息"
+                app:badge_gravity="rightTop"
+                app:badge_horizontalMargin="27dp"
+                app:badge_verticalMargin="2dp" />
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/center_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_center"
+                android:text="我" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

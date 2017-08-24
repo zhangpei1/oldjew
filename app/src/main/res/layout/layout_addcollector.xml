@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+  <include layout="@layout/layout_title"></include>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/collector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <EditText
+                    android:id="@+id/colltector"
+                    android:textSize="13sp"
+                    android:layout_marginRight="12dp"
+                    android:hint="请输入催收员真实姓名"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3290f2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/collctor_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:digits="1234567890"
+                    android:id="@+id/colltector_phone"
+                    android:textSize="13sp"
+                    android:layout_marginRight="80dp"
+                    android:hint="请输入催收员手机号码"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp" />
+
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/obtain_text"
+                    android:textColor="#3290f2"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="获取验证码"
+                    android:background="@drawable/getverification"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3290f2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3290f2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/collector_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <EditText
+                    android:id="@+id/edit_code"
+                    android:maxLength="16"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
+                    android:textSize="13sp"
+                    android:layout_marginRight="12dp"
+                    android:hint="填写验证码"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#3290f2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sure_modify"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="确定"
+        android:background="@drawable/selector_details"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

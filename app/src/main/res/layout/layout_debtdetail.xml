@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title"></include>
+
+
+    <android.support.design.widget.TabLayout
+        app:tabSelectedTextColor="#3290F2"
+        app:tabIndicatorColor="#3290F2"
+        android:background="#ffffff"
+        android:id="@+id/debt_details_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/debt_details_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/ensure"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#1378E1"
+        android:text="抢单"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+</LinearLayout>

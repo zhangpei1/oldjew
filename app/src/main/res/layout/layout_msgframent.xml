@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"></include>
+ <com.handmark.pulltorefresh.library.PullToRefreshListView
+     android:id="@+id/msg_list"
+     android:divider="#F0F0F0"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>
